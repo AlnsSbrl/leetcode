@@ -2,7 +2,7 @@
 
 Solution solution = new Solution();
 
-solution.LengthOfLongestSubstring(" ");
+solution.LongestPalindrome("babad");
 /*
 LinkedList<int> list = new LinkedList<int>();
 list.AddLast(2);

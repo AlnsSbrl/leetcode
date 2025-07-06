@@ -99,5 +99,42 @@ namespace LeetCode
             return maxLength;
         }
 
+
+        /// <summary>
+        /// Given a string str returns the longest palindromic substring in str
+        /// </summary>
+        /// <param name="str">string</param>
+        /// <returns>longest palindromic string</returns>
+        public string LongestPalindrome(string str)
+        {
+            string longestPalindrome = str[0]+"";
+            for (int i = 0; i < str.Length; i++)
+            {
+                for(int j = str.Length-1; j > i; j--)
+                {
+                    if (str[i] == str[j])
+                    {
+                        string substring = str.Substring(i, j+1-i);
+                        if (IsStringAPalindrome(substring) && substring.Length > longestPalindrome.Length)
+                        {
+                            longestPalindrome = substring;
+                        }
+                    }
+                }
+            }
+            return longestPalindrome;
+        }
+
+        public bool IsStringAPalindrome(string str)
+        {    
+            for (int i = 0;i < str.Length/2;i++)
+            {
+                if (str[i] != str[str.Length-1-i])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
