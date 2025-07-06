@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode", "LeetCode\LeetCode.csproj", "{F282BC97-3E29-45EC-9119-F1CAFC0A1FC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{B2C912DD-E147-448E-AEDF-93A123C8E427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Tests", "LeetCode.Tests\LeetCode.Tests.csproj", "{98873A3E-04F2-4F8E-AB63-5B4CE6AB8147}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F282BC97-3E29-45EC-9119-F1CAFC0A1FC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F282BC97-3E29-45EC-9119-F1CAFC0A1FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F282BC97-3E29-45EC-9119-F1CAFC0A1FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F282BC97-3E29-45EC-9119-F1CAFC0A1FC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C912DD-E147-448E-AEDF-93A123C8E427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C912DD-E147-448E-AEDF-93A123C8E427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C912DD-E147-448E-AEDF-93A123C8E427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C912DD-E147-448E-AEDF-93A123C8E427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98873A3E-04F2-4F8E-AB63-5B4CE6AB8147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98873A3E-04F2-4F8E-AB63-5B4CE6AB8147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98873A3E-04F2-4F8E-AB63-5B4CE6AB8147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98873A3E-04F2-4F8E-AB63-5B4CE6AB8147}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6DA0D35-88FA-4D71-8367-1A9E1A640967}
+	EndGlobalSection
+EndGlobal
