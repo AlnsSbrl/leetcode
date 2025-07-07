@@ -136,5 +136,36 @@ namespace LeetCode
             }
             return true;
         }
+
+        /// <summary>
+        /// Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, (2^31) - 1], then return 0
+        /// </summary>
+        /// <param name="number">Integer to be reversed</param>
+        /// <returns>the reversed integer or 0</returns>
+        public int ReverseInteger(int number)
+        {
+            if(number.ToString().Length == 1)
+            {
+                return number;
+            }
+            string num = number.ToString();
+            string cantExceedThisValue = number < 0 ? "-2147483648".Substring(1) : "2147483647";
+            string valueToCompare = number < 0 ? num.Substring(1) : num;
+            int j = valueToCompare.Length -1;
+            string finalNum= "";
+            for (int i = 0; i< cantExceedThisValue.Length; i++)
+            {
+                finalNum += valueToCompare[j];
+                j--;
+                if(j < 0)
+                {
+                    break;
+                }
+            }
+            finalNum=finalNum.TrimStart('0');
+            int numberToReturn = 0;
+            int.TryParse(number<0? "-"+finalNum:finalNum, out numberToReturn);
+            return numberToReturn;          
+        }      
     }
 }

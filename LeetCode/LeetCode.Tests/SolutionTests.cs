@@ -76,5 +76,21 @@ namespace LeetCode.Tests
             bool isAPalindromeActual = solution.IsStringAPalindrome(str);
             Assert.Equal(isAPalindromeActual, isAPalindromeExpectation);
         }
+
+        [Theory()]
+        [InlineData(123,321)]
+        [InlineData(-123,-321)]
+        [InlineData(120,21)]
+        [InlineData(0,0)]
+        [InlineData(-2147483412, -2143847412)]
+        public void ReverseIntegerTests(int numberToReverse, int expectedResult)
+        {
+            //given
+            //when
+            int actualResult=solution.ReverseInteger(numberToReverse);
+            //then
+            Assert.Equal(expectedResult, actualResult);
+
+        }
     }
 }
